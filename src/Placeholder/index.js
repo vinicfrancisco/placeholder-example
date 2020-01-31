@@ -1,9 +1,22 @@
 import React from 'react';
 
-import Card from './Card';
+import './styles.css';
 
-export default function Placeholder() {
-  return <div />;
+export default function Placeholder({ children, loading }) {
+  return (
+    <>
+      {loading ? (
+        <div className="card">
+          <div className="content">
+            <div className="title" />
+            <div className="value" />
+          </div>
+
+          <div className="icon" />
+        </div>
+      ) : (
+        children
+      )}
+    </>
+  );
 }
-
-Placeholder.Card = Card;

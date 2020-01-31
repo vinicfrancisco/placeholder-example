@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="container">
       <div className="cards-container">
-        <Placeholder.Card loading={loading}>
+        <Placeholder loading={loading}>
           <div className="card-container">
             <div className="card-content">
               <span className="card-title">Título</span>
@@ -25,7 +25,7 @@ function App() {
 
             <div className="card-icon" />
           </div>
-        </Placeholder.Card>
+        </Placeholder>
       </div>
     </div>
   );
