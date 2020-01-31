@@ -31,12 +31,7 @@ export default App;
 
 Agora, tendo a estrutura do layout do card, precisamos criar o componente de placeholder.
 
-Este componente receberá duas props:
-
-— children;
-— loading
-
-Sendo a primeira responsável por passar para o componente o que deverá ser renderizado após o loading completo, e a segunda um boolean para informar ao componente que ele deve mostrar o placeholder e não o conteúdo.
+Este componente receberá duas props: **children, loading**. Sendo a primeira responsável por passar para o componente o que deverá ser renderizado após o loading completo, e a segunda um boolean para informar ao componente que ele deve mostrar o placeholder e não o conteúdo.
 
 Além disso, ele será montado seguindo a mesma estrutura de layout do card feito anteriormente, trocando os textos e imagens por blocos cinzas como mostra o exemplo:
 
