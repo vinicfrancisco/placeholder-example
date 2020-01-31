@@ -2,6 +2,9 @@
 
 Olá! Hoje aprenderemos como criar um componente de placeholder para qualquer tela de carregamento no ReactJS utilizando apenas CSS puro.
 
+![gif](https://miro.medium.com/max/328/1*yL_7Vml4bxl1GvdTTe6UYQ.gif)
+
+
 Para iniciarmos, precisamos primeiro criar o componente em que aplicaremos o placeholder. Neste exemplo utilizaremos um card com Título, Valor e um figura genérica como no exemplo abaixo.
 
 ````
@@ -63,7 +66,7 @@ export default function Placeholder({ children, loading }) {
 }
 ```
 
-Com o componente devidamente criado e estilizado, precisamos agora aplicar o efeito de pulse nos objetos cinza. Para isso, utilizaremos keyframes para controlar a opacidade das divs.
+Com o componente devidamente criado e estilizado, precisamos agora aplicar o efeito de pulse nos objetos cinza. Para isso, utilizaremos **keyframes** para controlar a opacidade das divs.
 
 ```
 @keyframes pulse {
@@ -80,7 +83,7 @@ Com o componente devidamente criado e estilizado, precisamos agora aplicar o efe
 
 ```
 
-Agora, com a animação criada, basta aplicarmos ela em todas as divs da classe card:
+Agora, com a animação criada, basta aplicarmos ela em todas as divs da classe **card**:
 
 ```
 .card div {
@@ -90,7 +93,7 @@ Agora, com a animação criada, basta aplicarmos ela em todas as divs da classe 
 
 Com este componente finalizado, basta agora chamarmos ele em nossa página e passarmos a prop de loading. 
 
-Para simular o tempo de carregamento da página, utilizaremos o método setTimeout e controlaremos o loading com um state da nossa página.
+Para simular o tempo de carregamento da página, utilizaremos o método **setTimeout** e controlaremos o loading com um state da nossa página.
 
 ```
 import React, { useState, useEffect } from 'react';
