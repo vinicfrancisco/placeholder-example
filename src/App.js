@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import Placeholder from './Placeholder';
+
+import './styles.css';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="cards-container">
+        <Placeholder.Card loading={loading}>
+          <div className="card-container">
+            <div className="card-content">
+              <span className="card-title">Título</span>
+              <span className="card-value">Valor</span>
+            </div>
+
+            <div className="card-icon" />
+          </div>
+        </Placeholder.Card>
+      </div>
     </div>
   );
 }
