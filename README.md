@@ -1,4 +1,4 @@
-#Criando placeholders para loading page em ReactJS
+# Criando placeholders para loading page em ReactJS
 
 Olá! Hoje aprenderemos como criar um componente de placeholder para qualquer tela de carregamento no ReactJS utilizando apenas CSS puro.
 
