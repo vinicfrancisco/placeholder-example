@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="container">
-      <div className="cards-container">
         <Placeholder loading={loading}>
           <div className="card-container">
             <div className="card-content">
@@ -26,7 +25,6 @@ function App() {
             <div className="card-icon" />
           </div>
         </Placeholder>
-      </div>
     </div>
   );
 }
