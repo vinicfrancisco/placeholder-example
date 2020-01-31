@@ -7,6 +7,8 @@ Olá! Hoje aprenderemos como criar um componente de placeholder para qualquer te
 
 Para iniciarmos, precisamos primeiro criar o componente em que aplicaremos o placeholder. Neste exemplo utilizaremos um card com Título, Valor e um figura genérica como no exemplo abaixo.
 
+![img](https://miro.medium.com/max/335/1*rkZbMKI3ZQKbhsBunvaHwQ.png)
+
 ````
 
 import React from 'react';
@@ -37,6 +39,8 @@ Agora, tendo a estrutura do layout do card, precisamos criar o componente de pla
 Este componente receberá duas props: **children, loading**. Sendo a primeira responsável por passar para o componente o que deverá ser renderizado após o loading completo, e a segunda um boolean para informar ao componente que ele deve mostrar o placeholder e não o conteúdo.
 
 Além disso, ele será montado seguindo a mesma estrutura de layout do card feito anteriormente, trocando os textos e imagens por blocos cinzas como mostra o exemplo:
+
+![img](https://miro.medium.com/max/328/1*tHcK2mNch_uYbgxyzCFCvw.png)
 
 Segue abaixo o código do componente Placeholder:
 
