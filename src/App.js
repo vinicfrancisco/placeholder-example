@@ -20,6 +20,7 @@ function App() {
           <div className="card-container">
             <div className="card-content">
               <span className="card-title">Título</span>
+              
               <span className="card-value">Valor</span>
             </div>
 
